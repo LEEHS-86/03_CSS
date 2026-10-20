@@ -1,0 +1,58 @@
+/*
+    :hover (마우스를 올렸을 때 적용받는 CSS)
+ */
+
+.btn {
+    background: white;
+    color: tomato;
+    /* border : 요소의 경계 */
+    border: 2px solid tomato;
+    padding: 8px 20px;
+    /* border-radius : 경계의 외각을 둥글게 */
+    border-radius: 8px;
+}
+
+.btn:hover {
+    background: tomato;   /*  나중에 써진게 적용됨 */
+    color: white;
+}
+
+input:focus {
+    outline: none;
+    border: 5px solid orange;
+    border-radius: 4px;
+}
+
+/*  순서를 통해 고르는건 ui 가 아닌 li 에서 처음으로 고른다 */
+li:first-child {
+    font-weight: bold;
+}
+
+li:last-child {
+    color: gray;
+}
+
+li:nth-child {
+    color: brown;
+}
+
+li:nth-child(odd) {
+    color: purple;
+}
+
+li:nth-child(even) {
+    color: blue;
+}
+/* (2n) - 짝수 , (2n -1) - 홀수, */
+/*
+    nth-child 괄호 안에 들어가는 건
+    자동으로 자연수가 들어가는 n을 이용 가능
+ */
+li:nth-child(2n) {
+    color: cyan;
+}
+
+li:nth-child(3n) {
+    color: red;
+}
+
